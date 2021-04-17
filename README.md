@@ -39,6 +39,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
-Adrian Karp - [@linkedin](https://www.linkedin.com/in/adrian-karp/) - karp.adrian@protonmail.com
+[@linkedin](https://www.linkedin.com/in/adrian-karp/) - [@email](mailto:karp.adrian@protonmail.com)
 
