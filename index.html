@@ -1,59 +1,274 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-  <title>Adrian Karp | Personal Page</title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-  <link href="style.css" type="text/css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Title</title>
+  <meta name="description" content="Page description">
+  <meta name="author" content="Adrian Karp">
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 
 <body>
-  <header class="container">
-    <div class="row">
-      <h1 class="col-sm-3">Adrian Karp</h1>
-      <nav class="col-sm-9 ">
-        <a href="education.html"><button type="button" class="btn btn-dark">Education</button></a>
-        <a href="experience.html"><button type="button" class="btn btn-dark">Experience</button></a>
-        <a href="contact.html"><button type="button" class="btn btn-dark">Contact</button></a>
-      </nav>
-    </div>
-  </header>
-  <section class="jumbotron justify-content-center">
-    <div class="row">
-      <div class="col">
-        <h2 class="pb-3 text-dark">Web Technologies Enthusiast</h2>
-        <h3 class="text-dark">HTML, CSS & JavaScript</h3>
-        <h3 class="text-dark">With a keen interest in MERN stack</h3>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#444444;">
+      <!-- Container wrapper -->
+      <div class="container">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html">adrianKarp</a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <!-- Link -->
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Icons -->
+          <ul class="navbar-nav d-flex flex-row me-1">
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.linkedin.com/in/adrian-karp/"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://github.com/adriankarp"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="mailto:karp.adrian@protonmail.com"><i class="fas fa-at"></i> </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar --
+
+    <!-- Background image -->
+    <div id="home" class="shadow-3-strong p-5 text-center bg-image" style="
+      background-image: url('images/intro.webp');
+      height: 500px;
+    ">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.25);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">I am <strong>Adrian Karp</strong></h1>
+            <h5 class="mb-3 mx-auto" id="title">ASPIRING WEB DEVELOPER</h5>
+            <a href="#about"><button type="button" class="btn btn-dark btn-rounded btn-floating  "
+                data-mdb-ripple-color="#ffffff"> <i class="fas fa-angle-down"></i> </button></a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  <div class="container">
-    <section class="row justify-content-center">
-      <div class="col-sm-6">
-        <p>Welcome to my personal page!</p>
-        <p>I am a Computer Science student, based in Timișoara, with an interest in learning to develop web
-          applications. Currently I am working as a Technical Content Development Intern @ Nokia.</p>
+    <!-- Background image -->
+  </header>
+
+  <main>
+    <!--About Section-->
+    <section id="about">
+      <div class="container mt-5 text-center">
+        <h2 class="mb-5">ABOUT <strong>ME</strong></h2>
+        <div class="row justify-content-center" id="technologies">
+          <div class="col-md-6">
+            <img src="images/me.jpg" id="avatar" alt="avatar" class="rounded-circle shadow-3-strong">
+            <p class="pt-5 mb-0">Web technologies enthusiast and a curious learner. </p>
+            <p class="mb-0">Seeking to achieve skills and knowledge in developing web applications, on both frontend and
+              backend sides.
+            </p>
+            <p>I also enjoy traveling, healthy cooking, working out, and music. </p>
+          </div>
+          <div class="col-md-6">
+            <p class="pb-4"><strong>Intermediate</strong></p>
+            <div class="row">
+              <div class="col-md-4 pb-2">
+                <i class="fab fa-html5 fa-3x"></i>
+                <p>HTML</p>
+              </div>
+              <div class="col-md-4 pb-2">
+                <i class="fab fa-css3 fa-3x"></i>
+                <p>CSS</p>
+              </div>
+              <div class="col-md-4 pb-2">
+                <i class="fab fa-js fa-3x"></i>
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div class="row pb-3">
+              <div class="col-md-6 pb-2">
+                <i class="fab fa-bootstrap fa-3x"></i>
+                <p>Bootstrap</p>
+              </div>
+              <div class="col-md-6 pb-2">
+                <i class="fab fa-mdb fa-3x"></i>
+                <p>MDBootstrap</p>
+              </div>
+            </div>
+            <p><strong>Currently learning</strong></p>
+            <div class="row">
+              <div class="col-md-6">
+                <i class="fab fa-react fa-3x"></i>
+                <p>React</p>
+              </div>
+              <div class="col-md-6">
+                <i class="fab fa-node fa-3x"></i>
+                <p>Node.js</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-  </div>
 
-  <footer class="container">
-    <div class="row">
-      <p class="col-sm-4">&copy; 2021 Adrian Karp</p>
-      <div class="col-sm-8">
-        <a target="_blank" href="https://github.com/adriankarp"><i class="bi bi-github"
-            style="font-size: 2rem; color: black;"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/adrian-karp/"><i class="bi bi-linkedin"
-            style="font-size: 2rem; color: black;"></i></a>
-        <a target="_blank" href="mailto:karp.adrian@protonmail.com"><i class="bi bi-mailbox2"
-            style="font-size: 2rem; color: black;"></i></a>
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container-fluid text-center" style="background-color: rgba(0, 0, 0, 0.05);">
+        <h2 class="mb-5 pt-3 text-uppercase">My projects</h2>
+        <h4 class="mb-2">Landing pages</h4>
+        <!--Projects cards-->
+        <div class="row mb-5">
+          <div class="col-lg-4 col-md-12">
+            <div class="card text-center">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="images/teaCozy.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">teaCozy</h5>
+                <p class="card-text">
+                  A landing page for a fictional tea store
+                </p>
+                <a href="https://github.com/adriankarp/teaCozy"><i class="me-2 fab fa-github fa-2x"></i></a>
+                <a href="https://adriankarp.github.io/teaCozy/"><i class="ms-2 fas fa-globe fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="card text-center ">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="images/companyPage.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">companyPage</h5>
+                <p class="card-text">
+                  A landing page for a fictional company
+                </p>
+                <a href="https://github.com/adriankarp/companyPage"><i class="me-2 fab fa-github fa-2x"></i></a>
+                <a href="https://adriankarp.github.io/companyPage/"><i class="ms-2 fas fa-globe fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="card text-center">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="images/404.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Placeholder</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc orci, efficitur a lobortis a, mattis
+                  et dolor. Curabitur.
+                </p>
+                <a href="https://github.com/adriankarp/companyPage"><i class="me-2 fab fa-github fa-2x"></i></a>
+                <a href="https://adriankarp.github.io/companyPage/"><i class="ms-2 fas fa-globe fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+
+    <!--Contact Section-->
+    <section id="contact" class="my-5 text-center">
+      <h3><strong>CONTACT ME</strong></h3>
+      <div class="row d-flex justify-content-center">
+        <div class="col-6">
+          <form>
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="form4Example1" class="form-control" />
+              <label class="form-label" for="form4Example1">Name</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form4Example2" class="form-control" />
+              <label class="form-label" for="form4Example2">Email address</label>
+            </div>
+
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+              <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+              <label class="form-label" for="form4Example3">Message</label>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+              <label class="form-check-label" for="form4Example4">
+                Send me a copy of this message
+              </label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <footer class="bg-light text-center ">
+      <div class="container p-4">
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright: Adrian Karp
+      </div>
+    </footer>
   </footer>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
 </body>
 
 </html>

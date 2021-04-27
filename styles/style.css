@@ -1,0 +1,40 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+#title {
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+#avatar {
+    width: auto;
+    height: 35%;
+}
+
+#technologies {
+    min-height: fit-content;
+    max-height: 600px;
+}
+
+#projects a {
+    color: black;
+}
+
+#projects a:hover {
+    color: black;
+}
+
+.card {
+    min-height: 500px;
+}
+
+#contact button {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:481px) {
+    #technologies {
+        min-height: max-content;
+        max-height: max-content;
+    }
+}
