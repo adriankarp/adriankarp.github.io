@@ -17,16 +17,19 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is my personal page (soon to be portfolio). It is built in a very simple manner, using basic web technologies.
+Welcome to my personal page.
 
-As time will pass, and I will learn to build more complicated and interesting stuff, this page (I can't call it a website right now) will be updated using the latest skills acquired.
-It will be a good side-project to help me apply and show what I learn.
+Here I will showcase my portfolio as I start learning and building new stuff.
+
+This page is built in a responsive manner.
 
 ### Built With
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Bootstrap](https://getbootstrap.com)
+* [MBBootstrap](https://mdbootstrap.com/)
+* [Formspree](https://formspree.io/)
 
 
 
