@@ -13,7 +13,7 @@ body {
 
 #technologies {
     min-height: fit-content;
-    max-height: 600px;
+    max-height: 550px;
 }
 
 #projects a {
@@ -37,4 +37,14 @@ body {
         min-height: max-content;
         max-height: max-content;
     }
+
+    #avatardiv {
+        height: 650px;
+    }
+
+    #avatar {
+        width: auto;
+        height: 55%;
+    }
+
 }
